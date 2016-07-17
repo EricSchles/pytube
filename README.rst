@@ -25,25 +25,20 @@ Development setup
 
 Setting up a development environment is as simple as four easy steps.
 
-1. Clone repo
-2. Install dependencies
-3. Build reST files from JSON files
-4. Build HTML files from reST files
-
 All of these steps are explained in detail below.
 
-First, pull down this repo's code::
+1. Pull down this repo's code::
 
   $ git clone --recursive https://github.com/pytube/pytube.git
 
-Then, install the dependencies for building this site. It is recommended to
+2. Install the dependencies for building this site. It is recommended to
 install all the requirements inside virtualenv_, use virtualenvwrapper_ to
 manage virtualenvs. **Building pytube.org requires Python 3.5**
 
 .. _virtualenv: https://virtualenv.pypa.io/en/latest/
 .. _virtualenvwrapper: https://virtualenvwrapper.readthedocs.org/en/latest/
 
-First of all, create a virtual environment to install all the dependencies
+3. Create a virtual environment to install all the dependencies
 into either using virtualenvwrapper::
 
   $ mkvirtualenv -p python3 pytube
@@ -56,7 +51,7 @@ From the root of the repo, run the following command::
 
   $ pip install -r requirements/dev.txt
 
-Finally, you'll be able to generate the HTML site. From the root of the repo,
+4. You'll be able to generate the HTML site. From the root of the repo,
 run the following command::
 
   $ make html
